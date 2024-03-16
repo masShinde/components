@@ -5,7 +5,7 @@ import Circle from "./Circle"
 
 const Stepper = () => {
 
-    const refs = useRef({})
+    const refs = useRef([])
 
     const [ lineSpacing, setLineSpacing] = useState({})
     const [ spacings, setSpacings ] = useState([])
@@ -24,7 +24,7 @@ const Stepper = () => {
     }
  
     const getLeftSpace = () => {
-        const firstPos = refs?.current?.['0']?.getBoundingClientRect()?.left + (refs?.current?.['0']?.getBoundingClientRect()?.width / 2)
+        const firstPos = refs?.current?.[0]?.getBoundingClientRect()?.left + (refs?.current?.[0]?.getBoundingClientRect()?.width / 2)
         return (firstPos )+ "px"
     }
     
@@ -34,8 +34,8 @@ const Stepper = () => {
             left: getLeftSpace()
         })
         const spacing = [] 
-        Object.keys(refs?.current)?.map((val, i) => {
-            const leftSpacing = (refs?.current?.[`${i}`]?.getBoundingClientRect()?.left) + (refs?.current?.['0']?.getBoundingClientRect()?.width / 2)
+        refs?.current?.map((val, i) => {
+            const leftSpacing = (refs?.current?.[i]?.getBoundingClientRect()?.left) + (refs?.current?.[i]?.getBoundingClientRect()?.width / 2)
             spacing.push(leftSpacing)
         })
         setSpacings(spacing)
