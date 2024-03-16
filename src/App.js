@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Accordion from './components/Accordion';
+import Modal from './components/Modal';
+import CountryCapital from './UIQuestions/CountryCapital';
+import CursorMove from './UIQuestions/CursorMovement';
+import Toast from './UIQuestions/GlobalToast';
+import PriceCalculator from './UIQuestions/PriceCalculator';
+import Stepper from './UIQuestions/Stepper';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <Accordion /> */}
+        {/* <Modal /> */}
+
+
+        {/* UI Questions */}
+        {/* <CountryCapital /> */}
+        {/* <CursorMove/> */}
+        {/* <PriceCalculator /> */}
+        {/* <Toast /> */}
+        <Stepper />
     </div>
   );
 }

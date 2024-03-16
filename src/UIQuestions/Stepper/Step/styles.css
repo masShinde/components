@@ -1,0 +1,19 @@
+.step-container{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.number-wrapper{
+   background-color: bisque;
+   border-radius: 50%;
+   width: 3rem;
+   height: 3rem;
+    position: absolute;
+   padding: 1rem;
+}
+
+.text-wrapper{
+    color: red;
+    margin-top: 2rem; 
+}

@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem
+}
+
+.total-div{
+    margin-bottom: 1rem;
+}
+
+h1{
+    margin-bottom: 1rem;
+}

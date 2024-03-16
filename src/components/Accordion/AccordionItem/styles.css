@@ -1,0 +1,23 @@
+.accordionItemWrapper{
+    background-color: aqua;
+    margin-bottom: 0.5rem;
+    width: 40rem;
+}
+
+.accordionTitle{
+    margin-bottom: 4px;
+    padding: 0.5rem 0;
+}
+
+.accordionDescriptionstyle{
+    transition: 1s display;
+    padding-bottom: 0.5rem;
+}
+
+.expand{
+    display: block;
+}
+
+.collapse{
+    display: none;
+}
