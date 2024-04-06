@@ -8,14 +8,13 @@ import Toast from './UIQuestions/GlobalToast';
 import Navbar from './UIQuestions/Navbar/Index';
 import PriceCalculator from './UIQuestions/PriceCalculator';
 import Stepper from './UIQuestions/Stepper';
+import Carousel from './UIQuestions/Carousel';
 
 function App() {
   return (
     <div className="App">
         {/* <Accordion /> */}
         {/* <Modal /> */}
-
-
         {/* UI Questions */}
         {/* <CountryCapital /> */}
         {/* <CursorMove/> */}
@@ -23,7 +22,8 @@ function App() {
         {/* <Toast /> */}
         {/* <Stepper /> */}
         {/* <AnalogClock /> */}
-        <Navbar />
+        {/* <Navbar /> */}
+        <Carousel />
     </div>
   );
 }
