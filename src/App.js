@@ -1,6 +1,7 @@
 import './App.css';
 import Accordion from './components/Accordion';
 import Modal from './components/Modal';
+import AnalogClock from './UIQuestions/AnalogClock';
 import CountryCapital from './UIQuestions/CountryCapital';
 import CursorMove from './UIQuestions/CursorMovement';
 import Toast from './UIQuestions/GlobalToast';
@@ -19,7 +20,8 @@ function App() {
         {/* <CursorMove/> */}
         {/* <PriceCalculator /> */}
         {/* <Toast /> */}
-        <Stepper />
+        {/* <Stepper /> */}
+        {/* <AnalogClock /> */}
     </div>
   );
 }

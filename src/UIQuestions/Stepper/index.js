@@ -35,7 +35,7 @@ const Stepper = () => {
         })
         const spacing = [] 
         refs?.current?.map((val, i) => {
-            const leftSpacing = (refs?.current?.[i]?.getBoundingClientRect()?.left) + (refs?.current?.[i]?.getBoundingClientRect()?.width / 2)
+            const leftSpacing = (refs?.current?.[i]?.getBoundingClientRect()?.left) + (refs?.current?.[i]?.getBoundingClientRect()?.width / 2) - 12
             spacing.push(leftSpacing)
         })
         setSpacings(spacing)
