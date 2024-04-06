@@ -1,0 +1,41 @@
+.nav-wrapper{
+    display: flex;
+    flex: 1;
+}
+
+.nav-list{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    background-color: aqua;
+    position: static;
+}
+
+.nav-item{
+    padding: 1.2rem 2rem; 
+}
+
+.nav-item:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    .nav-wrapper{
+        height: 100%;
+    }
+    .nav-list{
+        flex-direction: column;
+        height: 100%;
+        width: 120px;
+    }
+
+    .nav-item:not(:last-of-type){
+        border-bottom: 1px solid black;
+    }
+    
+
+}

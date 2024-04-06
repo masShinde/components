@@ -5,6 +5,7 @@ import AnalogClock from './UIQuestions/AnalogClock';
 import CountryCapital from './UIQuestions/CountryCapital';
 import CursorMove from './UIQuestions/CursorMovement';
 import Toast from './UIQuestions/GlobalToast';
+import Navbar from './UIQuestions/Navbar/Index';
 import PriceCalculator from './UIQuestions/PriceCalculator';
 import Stepper from './UIQuestions/Stepper';
 
@@ -22,6 +23,7 @@ function App() {
         {/* <Toast /> */}
         {/* <Stepper /> */}
         {/* <AnalogClock /> */}
+        <Navbar />
     </div>
   );
 }
