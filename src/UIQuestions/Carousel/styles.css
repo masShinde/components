@@ -4,6 +4,7 @@
     height: 100%;
     overflow: hidden;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .carousel-wrapper{
