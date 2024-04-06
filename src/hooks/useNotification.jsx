@@ -19,7 +19,7 @@ const useNotification = () => {
       }
     }
   
-    const createToast = (type, message) => {
+    const createToast = (type, message, time = 5000) => {
       const toastMessage = document.createElement("div")
       toastMessage.classList.add("toast")
       toastMessage.classList.add(getColorByType(type))
@@ -28,20 +28,21 @@ const useNotification = () => {
       document.body.appendChild(toastMessage)
       timerId.current = setTimeout(()=> {
         removeToastNode()
-      },5000)
+      },time)
   
     }
   
-    return {
-      showNotification: ({ type, message }) => {
-        console.log(type, message);
-        if(timerId?.current){
-          clearTimeout(timerId?.current)
-          removeToastNode()
-        }
-         
-        createToast(type, message)
+    const showNotification = ({ type, message, time }) => {
+      if(timerId?.current){
+        clearTimeout(timerId?.current)
+        removeToastNode()
       }
+       
+      createToast(type, message, time)
+    }
+
+    return {
+      showNotification: showNotification
     }
   };
 
